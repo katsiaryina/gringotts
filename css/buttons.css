@@ -1,0 +1,26 @@
+.btn {
+  display: block;
+  width: 100%;
+  border: none;
+  color: var(--white);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+
+  transition: hover 0.4s ease-in-out;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn-primary {
+  background: var(--primary);
+}
+
+.btn-secondary {
+  background: none;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}

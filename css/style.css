@@ -1,0 +1,87 @@
+:root {
+  --primary: #ff9800;
+  --secondary: #ff5722;
+  --dark: #212121;
+  /* --light: rgb(243, 240, 236); */
+  --light: #ffe0b2;
+  --white: #fff;
+  --divider-color: #bdbdbd;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+
+/* ------------------------------------- */
+/* GRID LAYOUT */
+/* This lines up the side nav, header and main  */
+/* ------------------------------------- */
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.layout nav {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.layout header {
+  grid-column: span 4;
+}
+
+.layout main {
+  grid-column: span 3;
+}
+
+/* ------------------------------------- */
+/* HEADER */
+/* ------------------------------------- */
+header {
+  background: var(--dark);
+  color: var(--white);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+header .logo {
+  text-align: center;
+}
+
+/* ------------------------------------- */
+/* MAIN */
+/* ------------------------------------- */
+main {
+  padding: 2rem;
+}
+
+/* ------------------------------------- */
+/* NOTIFICATIONS */
+/* ------------------------------------- */
+.error {
+  color: red;
+  font-size: 1.3rem;
+}

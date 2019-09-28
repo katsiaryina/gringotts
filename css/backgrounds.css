@@ -1,0 +1,33 @@
+.background-coins {
+  background: url('../img/candy-chocolates-coin-210703.jpg') center center/cover
+    no-repeat;
+  filter: blur(2px);
+}
+
+.background-cents {
+  background: url('../img/bank-cash-cent-164552.jpg') center center/cover
+    no-repeat;
+  filter: blur(2px);
+}
+
+.overlay-dark {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.background-triangle {
+  background: url('../img/falling-triangles.svg') center center/cover;
+  background-size: 20px;
+  z-index: -1;
+}
+
+.dark {
+  color: var(--white);
+  background: var(--dark);
+}
+
+.light {
+  background: var(--white);
+  color: var(--dark);
+}

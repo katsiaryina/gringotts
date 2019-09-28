@@ -1,0 +1,19 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+table thead tr {
+  background: none;
+}
+
+table tr {
+  background: var(--light);
+  border-bottom: 2px solid var(--white);
+}
+
+table th,
+table td {
+  padding: 0.5rem;
+}

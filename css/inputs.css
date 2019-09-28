@@ -1,0 +1,9 @@
+input[type='text'],
+input[type='date'],
+input[type='email'],
+input[type='password'],
+select {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border: 1px solid var(--light);
+}

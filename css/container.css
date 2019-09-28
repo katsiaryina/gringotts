@@ -1,0 +1,124 @@
+/* ------------------------------------- */
+/* General */
+/* ------------------------------------- */
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.grid-table {
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr 3fr 1fr;
+  grid-row-gap: 1px;
+  background: var(--divider-color);
+
+  justify-content: start;
+  align-items: center;
+  align-content: center;
+}
+
+.grid-table > * {
+  background: var(--white);
+  height: 100%;
+  display: grid;
+  align-items: center;
+  padding-right: 1rem;
+}
+
+/* ------------------------------------- */
+/* index.php page */
+/* ------------------------------------- */
+
+.container {
+  padding: 2rem;
+}
+
+.flex-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  min-height: 100vh;
+}
+
+.flex-2 > *:first-child {
+  flex: 2;
+}
+.flex-2 > * {
+  flex: 1;
+}
+
+.sign-in {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.sign-in section {
+  max-width: 400px;
+}
+
+/* ------------------------------------- */
+/* accueil.php page */
+/* ------------------------------------- */
+.card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: var(--light);
+  padding: 1rem;
+  margin-right: 2rem;
+}
+
+.card h3 {
+  font-size: 2rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+#my-transactions {
+  grid-template-columns: 3fr 3fr 3fr 3fr 1fr;
+}
+
+/* ------------------------------------- */
+/* comptes.php */
+/* ------------------------------------- */
+#my-accounts {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 0px;
+}
+
+#my-accounts > h2 {
+  grid-column: span 3;
+  width: 100%;
+}
+
+#my-accounts > p,
+#my-accounts > h4 {
+  border-bottom: 0.5px solid var(--divider-color);
+}
+
+/* ------------------------------------- */
+/* factures.php */
+/* ------------------------------------- */
+.factures-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.factures-header > * {
+  flex: 4;
+}
+
+.factures-header > button {
+  flex: 1;
+}
+
+#factures {
+  grid-template-columns: 3fr 3fr 3fr 1fr;
+}

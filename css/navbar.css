@@ -1,0 +1,54 @@
+/* ------------------------------------- */
+/* General NAVBARS */
+/* ------------------------------------- */
+
+nav ul {
+  list-style: none;
+}
+
+/* ------------------------------------- */
+/* topnav */
+/* ------------------------------------- */
+.topnav ul {
+  display: flex;
+  flex-direction: row;
+}
+.topnav ul li {
+  margin-left: 1rem;
+}
+
+.topnav ul li a {
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+/* ------------------------------------- */
+/* Sidenav */
+/* ------------------------------------- */
+.sidenav {
+  background: var(--dark);
+  text-align: center;
+  min-height: 100vh;
+}
+
+.sidenav ul {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 1rem;
+  align-items: flex-end;
+}
+
+.sidenav ul li {
+  flex: 1;
+  display: flex;
+  width: 100%;
+}
+
+.sidenav ul li a {
+  flex: 1;
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}

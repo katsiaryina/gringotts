@@ -1,0 +1,27 @@
+.vertical-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+.vertical-form > * {
+  margin-bottom: 2rem;
+}
+
+.vertical-form > label {
+  margin-bottom: 0.5rem;
+}
+
+.horizontal-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.horizontal-form > * {
+  margin-right: 2rem;
+}
+
+.horizontal-form > button {
+  max-width: 200px;
+}

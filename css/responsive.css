@@ -1,0 +1,79 @@
+@media (max-width: 960px) {
+  .layout {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidenav {
+    min-height: 0%;
+  }
+}
+
+@media (max-width: 700px) {
+  .topnav ul li:nth-child(1) {
+    display: none;
+  }
+
+  /* login page */
+  .flex-2 > *:first-child {
+    flex: 1;
+  }
+}
+
+@media (max-width: 960px) and (min-width: 600px) {
+  .sidenav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  .sidenav ul li a {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .topnav ul li:nth-child(1),
+  .topnav ul li:nth-child(2) {
+    display: none;
+  }
+
+  header > div > h2 {
+    display: none;
+  }
+
+  /* login page */
+  .flex-2 > *:first-child {
+    display: none;
+  }
+
+  /* Grids */
+  #my-transactions {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #my-transactions > a,
+  #my-transactions p.description {
+    display: none;
+  }
+
+  #my-accounts {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #my-accounts > h2 {
+    grid-column: span 2;
+  }
+
+  #my-accounts > p:nth-child(odd) {
+    display: none;
+  }
+
+  #factures {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #factures a,
+  #factures h4:first-child {
+    display: none;
+  }
+}
